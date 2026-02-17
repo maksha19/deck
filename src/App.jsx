@@ -97,14 +97,14 @@ function App() {
       />
 
       {/* Slide counter */}
-      <div className="fixed bottom-6 left-6 text-white/60 text-sm font-medium z-50">
+      {/* <div className="fixed bottom-6 left-6 text-white/60 text-sm font-medium z-50">
         {currentSlide + 1} / {slides.length}
-      </div>
+      </div> */}
 
       {/* Keyboard hint */}
-      <div className="fixed bottom-6 right-6 text-white/40 text-xs z-50 hidden md:block">
+      {/* <div className="fixed bottom-6 right-6 text-white/40 text-xs z-50 hidden md:block">
         Use arrow keys to navigate
-      </div>
+      </div> */}
     </div>
   )
 }

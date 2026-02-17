@@ -54,8 +54,8 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, 
                                     setShowMenu(false)
                                 }}
                                 className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 flex items-center gap-2 ${index === currentSlide
-                                        ? 'bg-gov-sky/30 text-white font-medium'
-                                        : 'text-white/70 hover:bg-white/10 hover:text-white'
+                                    ? 'bg-gov-sky/30 text-white font-medium'
+                                    : 'text-white/70 hover:bg-white/10 hover:text-white'
                                     }`}
                             >
                                 <span className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-xs">
@@ -69,7 +69,7 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, 
             )}
 
             {/* Navigation dots */}
-            <div className="fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
+            {/* <div className="fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-50">
                 {slides.map((_, index) => (
                     <button
                         key={index}
@@ -78,7 +78,7 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, 
                         aria-label={`Go to slide ${index + 1}`}
                     />
                 ))}
-            </div>
+            </div> */}
         </>
     )
 }
