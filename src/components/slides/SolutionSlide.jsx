@@ -31,51 +31,40 @@ export default function SolutionSlide() {
     ]
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center px-8 py-16">
+        <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-7xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-4 py-2 rounded-full bg-gov-sky/20 text-gov-sky text-sm font-medium mb-6 animate-fade-in">
-                    Slide 6 — Solution Overview
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                    Solution Overview
                 </div>
 
                 {/* Title */}
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in-up">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 md:mb-4 animate-fade-in-up">
                     Digital Pre-Engagement Platform
                 </h2>
-                <p className="text-xl text-white/60 mb-12 animate-fade-in-up stagger-1">
+                <p className="text-base md:text-xl text-white/60 mb-8 md:mb-12 animate-fade-in-up stagger-1">
                     How It Works
                 </p>
 
-                {/* Hero Image */}
-                {/* <div className="mb-12 animate-fade-in-up stagger-2">
-                    <div className="slide-image max-w-3xl mx-auto">
-                        <img
-                            src="/images/ai_digital_transformation.png"
-                            alt="AI and digital transformation"
-                            className="w-full h-auto"
-                        />
-                    </div>
-                </div> */}
-
                 {/* Steps */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                     {steps.map((step, index) => (
-                        <div key={index} className="flex flex-col md:flex-row items-center gap-4 w-full">
+                        <div key={index} className="flex flex-col md:flex-row items-center gap-2 md:gap-4 w-full">
                             <div
-                                className={`glass-card p-6 relative min-h-[250px] w-full animate-fade-in-up stagger-${index + 1} hover:scale-105 transition-transform`}
+                                className={`glass-card p-4 md:p-6 relative min-h-[auto] md:min-h-[250px] w-full animate-fade-in-up stagger-${index + 1} hover:scale-105 transition-transform`}
                             >
-                                <div className="flex items-center gap-4 mb-4">
+                                <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
                                     {/* Icon */}
-                                    <div className="text-4xl">{step.icon}</div>
+                                    <div className="text-2xl md:text-4xl">{step.icon}</div>
 
                                     {/* Title */}
-                                    <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+                                    <h3 className="text-base md:text-lg font-semibold text-white">{step.title}</h3>
                                 </div>
 
                                 {/* Items */}
-                                <ul className="space-y-2">
+                                <ul className="space-y-1.5 md:space-y-2">
                                     {step.items.map((item, i) => (
-                                        <li key={i} className="text-white/80 text-sm flex items-start gap-2 leading-relaxed">
+                                        <li key={i} className="text-white/80 text-[11px] md:text-sm flex items-start gap-2 leading-relaxed">
                                             <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>
                                             <span className="flex-1">{item}</span>
                                         </li>
@@ -84,9 +73,9 @@ export default function SolutionSlide() {
                             </div>
                             {/* Arrow to next */}
                             {index < steps.length - 1 && (
-                                <div className="flex items-center justify-center transform rotate-90 md:rotate-0 my-4 md:my-0">
-                                    <svg className="w-6 h-6 text-gov-sky" fill="none" stroke="white" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={7} d="M9 5l7 7-7 7" />
+                                <div className={`flex items-center justify-center transform my-2 md:my-0 ${index === 1 ? 'hidden md:flex rotate-90 md:rotate-0' : 'rotate-0'}`}>
+                                    <svg className="w-4 h-4 md:w-6 md:h-6 text-gov-sky" fill="none" stroke="white" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={5} d="M9 5l7 7-7 7" />
                                     </svg>
                                 </div>
                             )}
