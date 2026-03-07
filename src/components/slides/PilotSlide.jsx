@@ -9,7 +9,7 @@ export default function PilotSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-6xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Pilot Plan
                 </div>
 
@@ -27,20 +27,20 @@ export default function PilotSlide() {
                         </h3>
                         <div className="space-y-3 md:space-y-4">
                             <div className="flex justify-between border-b border-white/10 pb-2 md:pb-3">
-                                <span className="text-white/70 text-xs md:text-sm">Location</span>
-                                <span className="font-medium text-white text-xs md:text-sm">Single constituency</span>
+                                <span className="text-white/70 text-xs md:text-lg">Location</span>
+                                <span className="font-medium text-white text-xs md:text-lg">Single constituency</span>
                             </div>
                             <div className="flex justify-between border-b border-white/10 pb-2 md:pb-3">
-                                <span className="text-white/70 text-xs md:text-sm">Duration</span>
-                                <span className="font-medium text-white text-xs md:text-sm">6 months</span>
+                                <span className="text-white/70 text-xs md:text-lg">Duration</span>
+                                <span className="font-medium text-white text-xs md:text-lg">6 months</span>
                             </div>
                             <div className="flex justify-between border-b border-white/10 pb-2 md:pb-3">
-                                <span className="text-white/70 text-xs md:text-sm">Coverage</span>
-                                <span className="font-medium text-white text-xs md:text-sm">All MPS sessions</span>
+                                <span className="text-white/70 text-xs md:text-lg">Coverage</span>
+                                <span className="font-medium text-white text-xs md:text-lg">All MPS sessions</span>
                             </div>
                             <div className="flex justify-between">
-                                <span className="text-white/70 text-xs md:text-sm">Participation</span>
-                                <span className="font-medium text-white text-xs md:text-sm">Voluntary</span>
+                                <span className="text-white/70 text-xs md:text-lg">Participation</span>
+                                <span className="font-medium text-white text-xs md:text-lg">Voluntary</span>
                             </div>
                         </div>
                     </div>
@@ -52,15 +52,15 @@ export default function PilotSlide() {
                             Governance
                         </h3>
                         <div className="space-y-3 md:space-y-4">
-                            <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-sm">
+                            <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-lg">
                                 <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>
                                 <span>Pilot Steering Committee</span>
                             </div>
-                            <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-sm">
+                            <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-lg">
                                 <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>
                                 <span>GovTech review sessions</span>
                             </div>
-                            <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-sm">
+                            <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-lg">
                                 <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>
                                 <span>Monthly progress reports</span>
                             </div>
@@ -81,8 +81,8 @@ export default function PilotSlide() {
                                     <div className={`w-3 h-3 md:w-4 md:h-4 rounded-full bg-${item.color} mt-2 md:mb-4 ring-2 md:ring-4 ring-${item.color}/30 flex-shrink-0`} />
                                     <div className="flex-1">
                                         <h4 className="font-semibold text-white mb-0.5 md:mb-1.5 text-sm md:text-base">{item.phase}</h4>
-                                        <p className="text-gov-sky text-xs md:text-sm mb-1 md:mb-2 font-medium">{item.duration}</p>
-                                        <p className="text-white/70 text-[11px] md:text-sm leading-relaxed">{item.activities}</p>
+                                        <p className="text-gov-sky text-xs md:text-lg mb-1 md:mb-2 font-medium">{item.duration}</p>
+                                        <p className="text-white/70 text-[11px] md:text-lg leading-relaxed">{item.activities}</p>
                                     </div>
                                 </div>
                             ))}

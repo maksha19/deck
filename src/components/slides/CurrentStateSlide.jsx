@@ -1,10 +1,10 @@
 export default function CurrentStateSlide() {
     const steps = [
         { label: 'Citizen arrives', icon: '🚶' },
-        { label: 'Waits 30m-1h', icon: '⏰' },
-        { label: '5–10m session', icon: '💬' },
+        { label: 'Waits 20-40mins', icon: '⏰' },
+        { label: '5–10mins session', icon: '💬' },
         { label: 'Officer docs', icon: '📝' },
-        { label: '10-15m waiting', icon: '⏰' },
+        { label: '10-15mins waiting', icon: '⏰' },
         { label: 'Minister Meetup', icon: '👥' },
     ]
 
@@ -19,7 +19,7 @@ export default function CurrentStateSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-6xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-red-500/20 text-red-400 text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-red-500/20 text-red-400 text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Current State
                 </div>
 
@@ -40,7 +40,7 @@ export default function CurrentStateSlide() {
                                     <div className="w-10 h-10 md:w-16 md:h-16 rounded-xl bg-red-500/20 flex items-center justify-center shadow-lg">
                                         <span className="text-xl md:text-3xl">{step.icon}</span>
                                     </div>
-                                    <span className="text-white/80 text-[10px] md:text-sm text-center max-w-[60px] md:max-w-24 font-medium leading-tight">{step.label}</span>
+                                    <span className="text-white/80 text-[10px] md:text-lg text-center max-w-[60px] md:max-w-24 font-medium leading-tight">{step.label}</span>
                                 </div>
                                 {index < steps.length - 1 && (
                                     <div className={`text-red-500/50 my-auto ${index === 2 ? 'hidden md:block' : ''}`}>
@@ -65,7 +65,7 @@ export default function CurrentStateSlide() {
                             className={`glass-card p-4 md:p-6 flex items-start gap-3 md:gap-4 border-l-4 border-red-500 animate-fade-in-up stagger-${index + 3}`}
                         >
                             <span className="text-xl md:text-2xl mt-0.5 flex-shrink-0">{point.icon}</span>
-                            <span className="text-white/80 text-xs md:text-sm font-medium">{point.text}</span>
+                            <span className="text-white/80 text-xs md:text-lg font-medium">{point.text}</span>
                         </div>
                     ))}
                 </div>

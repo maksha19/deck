@@ -1,10 +1,10 @@
 export default function ChallengeSlide() {
     const steps = [
         { label: 'Citizen arrives', icon: '🚶' },
-        { label: 'Waits 30m-1h', icon: '⏰' },
-        { label: '5–10m session', icon: '💬' },
+        { label: 'Waits 20mins-40mins', icon: '⏰' },
+        { label: '5–10mins session', icon: '💬' },
         { label: 'Officer docs', icon: '📝' },
-        { label: '10-15m waiting', icon: '⏰' },
+        { label: '10-15mins waiting', icon: '⏰' },
         { label: 'Minister Meetup', icon: '👥' },
     ]
 
@@ -26,7 +26,7 @@ export default function ChallengeSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-7xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-red-500/20 text-red-400 text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-red-500/20 text-red-400 text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     The Challenge Today
                 </div>
                 {/* Title */}
@@ -46,7 +46,7 @@ export default function ChallengeSlide() {
                                     <div className="w-10 h-10 md:w-16 md:h-16 rounded-xl bg-red-500/20 flex items-center justify-center shadow-lg">
                                         <span className="text-xl md:text-3xl">{step.icon}</span>
                                     </div>
-                                    <span className="text-white/80 text-[10px] md:text-sm text-center max-w-[60px] md:max-w-24 font-medium leading-tight">{step.label}</span>
+                                    <span className="text-white/80 text-[10px] md:text-lg text-center max-w-[60px] md:max-w-24 font-medium leading-tight">{step.label}</span>
                                 </div>
                                 {index < steps.length - 1 && (
                                     <div className={`text-red-500/50 my-auto ${index === 2 ? 'hidden md:block' : ''}`}>
@@ -85,8 +85,8 @@ export default function ChallengeSlide() {
                                         <span className="text-2xl md:text-3xl">{item.icon}</span>
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                        <h4 className="font-semibold text-white text-sm md:text-base mb-1 md:mb-1.5">{item.challenge}</h4>
-                                        <p className="text-white/70 text-[11px] md:text-sm leading-relaxed">{item.impact}</p>
+                                        <h4 className="font-semibold text-white text-sm md:text-lg mb-1 md:mb-1.5">{item.challenge}</h4>
+                                        <p className="text-white/70 text-[11px] md:text-lg leading-relaxed">{item.impact}</p>
                                     </div>
                                 </div>
                             ))}
@@ -94,7 +94,7 @@ export default function ChallengeSlide() {
                     </div>
 
                     {/* Officers column */}
-                    {/* <div className="animate-slide-right">
+                    <div className="animate-slide-right">
                         <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
                             <div className="w-8 h-8 md:w-12 md:h-12 rounded-full bg-gov-gold/30 flex items-center justify-center">
                                 <span className="text-xl md:text-2xl">👔</span>
@@ -111,13 +111,13 @@ export default function ChallengeSlide() {
                                         <span className="text-2xl md:text-3xl">{item.icon}</span>
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                        <h4 className="font-semibold text-white text-sm md:text-base mb-1 md:mb-1.5">{item.challenge}</h4>
-                                        <p className="text-white/70 text-[11px] md:text-sm leading-relaxed">{item.impact}</p>
+                                        <h4 className="font-semibold text-white text-sm md:text-lg mb-1 md:mb-1.5">{item.challenge}</h4>
+                                        <p className="text-white/70 text-[11px] md:text-lg leading-relaxed">{item.impact}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>

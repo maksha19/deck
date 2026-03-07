@@ -16,12 +16,12 @@ export default function TitleSlide() {
             </div>
 
             {/* Main title */}
-            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-center mb-4 md:mb-6 animate-fade-in-up gradient-text">
+            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-center mb-4 md:mb-6 animate-fade-in-up stagger-1">
                 Digital Pre-Engagement Platform
             </h1>
 
             {/* Subtitle */}
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-white/80 text-center mb-6 md:mb-8 animate-fade-in-up stagger-1">
+            <h2 className="text-xl sm:text-2xl md:text-3xl text-white/80 text-center mb-6 md:mb-8 animate-fade-in-up stagger-2">
                 Enhancing Ministerial Meet-the-People Sessions
             </h2>
 

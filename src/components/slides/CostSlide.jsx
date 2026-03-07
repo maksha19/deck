@@ -17,7 +17,7 @@ export default function CostSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-6xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-gold/20 text-gov-gold text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-gold/20 text-gov-gold text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Cost & Value
                 </div>
 
@@ -35,7 +35,7 @@ export default function CostSlide() {
                         </h3>
                         <div className="space-y-3 md:space-y-4">
                             {pilotCosts.map((item, index) => (
-                                <div key={index} className="flex justify-between items-start border-b border-white/10 pb-2 md:pb-3 last:border-0 text-xs md:text-sm">
+                                <div key={index} className="flex justify-between items-start border-b border-white/10 pb-2 md:pb-3 last:border-0 text-xs md:text-lg">
                                     <span className="font-medium text-white">{item.item}</span>
                                     <span className="text-white/70 text-right max-w-[150px] md:max-w-xs">{item.approach}</span>
                                 </div>
@@ -51,7 +51,7 @@ export default function CostSlide() {
                         </h3>
                         <div className="space-y-3 md:space-y-4">
                             {valueDelivered.map((item, index) => (
-                                <div key={index} className="flex justify-between items-start border-b border-white/10 pb-2 md:pb-3 last:border-0 text-xs md:text-sm">
+                                <div key={index} className="flex justify-between items-start border-b border-white/10 pb-2 md:pb-3 last:border-0 text-xs md:text-lg">
                                     <span className="font-medium text-white">{item.benefit}</span>
                                     <span className="text-green-400 text-right max-w-[120px] md:max-w-xs font-medium">{item.impact}</span>
                                 </div>
@@ -62,17 +62,17 @@ export default function CostSlide() {
 
                 {/* Fiscal Prudence */}
                 <div className="glass-card p-4 md:p-6 mt-6 md:mt-8 animate-fade-in-up stagger-3">
-                    <h3 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4">Fiscal Prudence</h3>
+                    <h3 className="text-base md:text-xl font-semibold text-white mb-3 md:mb-4">Fiscal Prudence</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
-                        <div className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-sm">
+                        <div className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-lg">
                             <span className="text-green-400 flex-shrink-0">✅</span>
                             <span>Incremental investment</span>
                         </div>
-                        <div className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-sm">
+                        <div className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-lg">
                             <span className="text-green-400 flex-shrink-0">✅</span>
                             <span>Evidence-based scaling</span>
                         </div>
-                        <div className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-sm">
+                        <div className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-lg">
                             <span className="text-green-400 flex-shrink-0">✅</span>
                             <span>Low-risk pilot rollout</span>
                         </div>

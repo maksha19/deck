@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import DemoSlide from './components/slides/DemoSlide'
 import TitleSlide from './components/slides/TitleSlide'
 import OpportunitySlide from './components/slides/OpportunitySlide'
 import ChallengeSlide from './components/slides/ChallengeSlide'
@@ -27,16 +28,17 @@ const slides = [
   { id: 5, component: FutureStateSlide, title: 'Future State' },
   { id: 6, component: SolutionSlide, title: 'Solution' },
   { id: 7, component: FeaturesSlide, title: 'Features' },
-  { id: 8, component: AlignmentSlide, title: 'Alignment' },
-  { id: 9, component: OutcomesSlide, title: 'Outcomes' },
-  { id: 10, component: SecuritySlide, title: 'Security' },
-  { id: 11, component: RiskSlide, title: 'Risks' },
-  { id: 12, component: CostSlide, title: 'Cost & Value' },
-  { id: 13, component: PilotSlide, title: 'Pilot Plan' },
-  { id: 14, component: SuccessSlide, title: 'Success Criteria' },
-  { id: 15, component: AskSlide, title: 'The Ask' },
-  { id: 16, component: VisionSlide, title: 'Vision' },
-  { id: 17, component: ClosingSlide, title: 'Closing' },
+  { id: 8, component: DemoSlide, title: 'Demo' },
+  { id: 9, component: AlignmentSlide, title: 'Alignment' },
+  { id: 10, component: OutcomesSlide, title: 'Outcomes' },
+  { id: 11, component: SecuritySlide, title: 'Security' },
+  { id: 12, component: RiskSlide, title: 'Risks' },
+  { id: 13, component: CostSlide, title: 'Cost & Value' },
+  { id: 14, component: PilotSlide, title: 'Pilot Plan' },
+  { id: 15, component: SuccessSlide, title: 'Success Criteria' },
+  { id: 16, component: AskSlide, title: 'The Ask' },
+  { id: 17, component: VisionSlide, title: 'Vision' },
+  { id: 18, component: ClosingSlide, title: 'Closing' },
 ]
 
 function App() {

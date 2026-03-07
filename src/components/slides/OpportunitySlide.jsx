@@ -3,7 +3,7 @@ export default function OpportunitySlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16 relative">
             <div className="max-w-7xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     The Opportunity
                 </div>
 
@@ -18,7 +18,7 @@ export default function OpportunitySlide() {
                         {/* Quote */}
                         <div className="glass-card p-4 md:p-8 mb-6 md:mb-8 animate-fade-in-up stagger-1">
                             <blockquote className="quote-block text-base sm:text-lg md:text-2xl text-white/90">
-                                "What if residents could share their story before they arrive—so officers can be ready, and meetings can be meaningful?"
+                                "What if residents could share their story before they arrive—so officers can be ready, and meetings can deliver faster?"
                             </blockquote>
                         </div>
 
@@ -29,8 +29,8 @@ export default function OpportunitySlide() {
                                     <span className="text-xl md:text-2xl">🏛️</span>
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <h3 className="text-base md:text-lg font-semibold text-white mb-1">Cornerstone</h3>
-                                    <p className="text-white/70 text-xs md:text-sm leading-relaxed">MPS is a cornerstone of Singapore's participatory governance</p>
+                                    <h3 className="text-base md:text-xl font-semibold text-white mb-1">Cornerstone</h3>
+                                    <p className="text-white/70 text-xs md:text-lg leading-relaxed">MPS is a cornerstone of Singapore's participatory governance</p>
                                 </div>
                             </div>
 
@@ -39,8 +39,8 @@ export default function OpportunitySlide() {
                                     <span className="text-xl md:text-2xl">🔧</span>
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <h3 className="text-base md:text-lg font-semibold text-white mb-1">Enhancement</h3>
-                                    <p className="text-white/70 text-xs md:text-sm leading-relaxed">Technology can enhance—not replace—this trusted channel</p>
+                                    <h3 className="text-base md:text-xl font-semibold text-white mb-1">Enhancement</h3>
+                                    <p className="text-white/70 text-xs md:text-lg leading-relaxed">Technology can enhance—not replace—this trusted channel</p>
                                 </div>
                             </div>
 
@@ -49,8 +49,8 @@ export default function OpportunitySlide() {
                                     <span className="text-xl md:text-2xl">⚡</span>
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <h3 className="text-base md:text-lg font-semibold text-white mb-1">Better Service</h3>
-                                    <p className="text-white/70 text-xs md:text-sm leading-relaxed">Opportunity to deliver faster, more accessible, and prepared service</p>
+                                    <h3 className="text-base md:text-xl font-semibold text-white mb-1">Better Service</h3>
+                                    <p className="text-white/70 text-xs md:text-lg leading-relaxed">Opportunity to deliver faster, more accessible, and prepared service</p>
                                 </div>
                             </div>
                         </div>

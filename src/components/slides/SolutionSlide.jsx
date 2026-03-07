@@ -34,7 +34,7 @@ export default function SolutionSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-7xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Solution Overview
                 </div>
 
@@ -58,13 +58,13 @@ export default function SolutionSlide() {
                                     <div className="text-2xl md:text-4xl">{step.icon}</div>
 
                                     {/* Title */}
-                                    <h3 className="text-base md:text-lg font-semibold text-white">{step.title}</h3>
+                                    <h3 className="text-base md:text-2xl font-semibold text-white">{step.title}</h3>
                                 </div>
 
                                 {/* Items */}
                                 <ul className="space-y-1.5 md:space-y-2">
                                     {step.items.map((item, i) => (
-                                        <li key={i} className="text-white/80 text-[11px] md:text-sm flex items-start gap-2 leading-relaxed">
+                                        <li key={i} className="text-white/80 text-[11px] md:text-xl flex items-start gap-2 leading-relaxed">
                                             <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>
                                             <span className="flex-1">{item}</span>
                                         </li>

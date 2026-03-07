@@ -32,7 +32,7 @@ export default function ClosingSlide() {
 
             <div className="max-w-6xl w-full relative z-10">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-gold/20 text-gov-gold text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-gold/20 text-gov-gold text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Closing
                 </div>
 
@@ -50,11 +50,11 @@ export default function ClosingSlide() {
                         >
                             <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
                                 <span className="text-2xl md:text-3xl">{item.icon}</span>
-                                <h3 className="font-semibold text-white text-base md:text-lg">{item.category}</h3>
+                                <h3 className="font-semibold text-white text-base md:text-xl">{item.category}</h3>
                             </div>
                             <ul className="space-y-1.5 md:space-y-2">
                                 {item.items.map((benefit, i) => (
-                                    <li key={i} className="flex items-start gap-2 text-white/80 text-xs md:text-sm leading-relaxed">
+                                    <li key={i} className="flex items-start gap-2 text-white/80 text-xs md:text-lg leading-relaxed">
                                         <span className="text-green-400 mt-0.5 flex-shrink-0">•</span>
                                         <span className="flex-1">{benefit}</span>
                                     </li>
@@ -66,20 +66,20 @@ export default function ClosingSlide() {
 
                 {/* Key takeaway */}
                 <div className="glass-card p-4 md:p-6 mb-8 md:mb-12 animate-fade-in-up stagger-4 border-l-4 border-gov-gold">
-                    <h3 className="text-sm md:text-lg font-semibold text-gov-gold mb-2 md:mb-3">Key Takeaway</h3>
-                    <p className="text-white/90 text-sm md:text-lg leading-relaxed">
+                    <h3 className="text-sm md:text-xl font-semibold text-gov-gold mb-2 md:mb-3">Key Takeaway</h3>
+                    <p className="text-white/90 text-sm md:text-xl leading-relaxed">
                         This platform <span className="font-semibold text-white">supports officers and empowers citizens</span>—enabling more meaningful engagement while preserving human accountability.
                     </p>
                 </div>
 
                 {/* Readiness */}
                 {/* <div className="glass-card p-4 md:p-6 mb-8 md:mb-12 animate-fade-in-up stagger-5">
-                    <h3 className="text-sm md:text-lg font-semibold text-white mb-3 md:mb-4">Ready for Your Decision</h3>
+                    <h3 className="text-sm md:text-xl font-semibold text-white mb-3 md:mb-4">Ready for Your Decision</h3>
                     <div className="flex flex-wrap gap-2 md:gap-4">
                         {readiness.map((item, index) => (
                             <div key={index} className="flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-green-500/20">
-                                <span className="text-green-400 text-xs md:text-sm">✅</span>
-                                <span className="text-white/90 text-[10px] md:text-sm">{item}</span>
+                                <span className="text-green-400 text-xs md:text-lg">✅</span>
+                                <span className="text-white/90 text-[10px] md:text-lg">{item}</span>
                             </div>
                         ))}
                     </div>
@@ -90,7 +90,7 @@ export default function ClosingSlide() {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-4 md:mb-6">
                         Thank You, Shanmugam Manikandan
                     </h2>
-                    <p className="text-white/60 text-xs md:text-sm">
+                    <p className="text-white/60 text-xs md:text-lg">
                         Pre-Engagement Platform | 2026
                     </p>
                 </div>

@@ -16,7 +16,7 @@ export default function RiskSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-6xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-yellow-500/20 text-yellow-400 text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Risk Assessment
                 </div>
 
@@ -32,7 +32,7 @@ export default function RiskSlide() {
                             key={index}
                             className={`glass-card p-4 md:p-6 border-l-4 ${getColorClass(item.likelihood, item.impact)}`}
                         >
-                            <h3 className="font-bold text-white text-sm md:text-base mb-2 md:mb-3">{item.risk}</h3>
+                            <h3 className="font-bold text-white text-sm md:text-2xl mb-2 md:mb-3">{item.risk}</h3>
                             <div className="flex gap-2 mb-3 md:mb-4">
                                 <span className={`px-2 py-0.5 rounded-full text-[10px] md:text-xs font-medium ${item.likelihood === 'Low' ? 'bg-green-500/20 text-green-400' : 'bg-yellow-500/20 text-yellow-400'}`}>
                                     {item.likelihood}
@@ -41,8 +41,8 @@ export default function RiskSlide() {
                                     {item.impact}
                                 </span>
                             </div>
-                            <p className="text-white/70 text-[11px] md:text-sm leading-relaxed">
-                                <span className="text-gov-sky font-semibold">Mitigation:</span> {item.mitigation}
+                            <p className="text-white/70 text-[11px] md:text-lg leading-relaxed">
+                                <span className="text-gov-sky md:text-lg font-semibold">Mitigation:</span> {item.mitigation}
                             </p>
                         </div>
                     ))}
@@ -50,17 +50,17 @@ export default function RiskSlide() {
 
                 {/* Risk governance */}
                 <div className="glass-card p-4 md:p-6 animate-fade-in-up stagger-2">
-                    <h3 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4">Risk Governance</h3>
+                    <h3 className="text-base md:text-2xl font-semibold text-white mb-3 md:mb-4">Risk Governance</h3>
                     <div className="flex flex-wrap gap-3 md:gap-6">
-                        <div className="flex items-center gap-2 text-white/80 text-[11px] md:text-sm">
+                        <div className="flex items-center gap-2 text-white/80 text-[11px] md:text-2xl">
                             <span className="text-gov-sky">•</span>
                             Steering Committee oversight
                         </div>
-                        <div className="flex items-center gap-2 text-white/80 text-[11px] md:text-sm">
+                        <div className="flex items-center gap-2 text-white/80 text-[11px] md:text-2xl">
                             <span className="text-gov-sky">•</span>
                             Regular risk reviews
                         </div>
-                        <div className="flex items-center gap-2 text-white/80 text-[11px] md:text-sm">
+                        <div className="flex items-center gap-2 text-white/80 text-[11px] md:text-2xl">
                             <span className="text-gov-sky">•</span>
                             Escalation pathways
                         </div>

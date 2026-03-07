@@ -17,7 +17,7 @@ export default function FeaturesSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-6xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Key Features
                 </div>
 
@@ -34,8 +34,8 @@ export default function FeaturesSlide() {
                             className={`glass-card p-3 md:p-6 text-center animate-fade-in-up stagger-${index + 1} hover:scale-105 transition-transform ${index === features.length - 1 ? 'col-span-2 md:col-span-1' : ''}`}
                         >
                             <div className="text-2xl md:text-4xl mb-2 md:mb-4">{item.icon}</div>
-                            <h3 className="font-semibold text-white mb-1 md:mb-2 text-[11px] md:text-sm leading-tight">{item.feature}</h3>
-                            <p className="text-white/70 text-[10px] md:text-xs leading-relaxed">{item.benefit}</p>
+                            <h3 className="font-semibold text-white mb-1 md:mb-2 text-[11px] md:text-lg leading-tight">{item.feature}</h3>
+                            <p className="text-white/70 text-[10px] md:text-lg leading-relaxed">{item.benefit}</p>
                         </div>
                     ))}
                 </div>
@@ -54,8 +54,8 @@ export default function FeaturesSlide() {
                                 <span className="text-2xl md:text-3xl">{item.icon}</span>
                             </div>
                             <div className="flex-1 min-w-0">
-                                <h4 className="font-semibold text-gov-sky text-sm md:text-base mb-1 md:mb-1.5">{item.title}</h4>
-                                <p className="text-white/70 text-[11px] md:text-sm leading-relaxed">{item.text}</p>
+                                <h4 className="font-semibold text-gov-sky text-sm md:text-xl mb-1 md:mb-1.5">{item.title}</h4>
+                                <p className="text-white/70 text-[11px] md:text-lg leading-relaxed">{item.text}</p>
                             </div>
                         </div>
                     ))}

@@ -31,7 +31,7 @@ export default function VisionSlide() {
 
             <div className="max-w-6xl w-full relative z-10">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     Long-Term Vision
                 </div>
 
@@ -56,9 +56,9 @@ export default function VisionSlide() {
                                     <span className="text-2xl md:text-3xl">{item.icon}</span>
                                 </div>
 
-                                <h3 className="font-semibold text-white text-base md:text-lg mb-1 md:mb-2">{item.phase}</h3>
-                                <p className="text-gov-sky text-xs md:text-sm mb-2 md:mb-3 font-medium">{item.duration}</p>
-                                <p className="text-white/70 text-xs md:text-sm leading-relaxed">{item.description}</p>
+                                <h3 className="font-semibold text-white text-base md:text-xl mb-1 md:mb-2">{item.phase}</h3>
+                                <p className="text-gov-sky text-xs md:text-lg mb-2 md:mb-3 font-medium">{item.duration}</p>
+                                <p className="text-white/70 text-xs md:text-lg leading-relaxed">{item.description}</p>
 
                                 {item.active && (
                                     <div className="absolute top-3 right-3 md:top-4 md:right-4 px-2 py-0.5 md:px-2 md:py-1 rounded-full bg-gov-sky/20 text-gov-sky text-[10px] md:text-xs font-medium">
@@ -72,7 +72,7 @@ export default function VisionSlide() {
 
                 {/* Vision Statement */}
                 <div className="glass-card p-6 md:p-8 text-center animate-fade-in-up stagger-4 animate-pulse-glow">
-                    <h3 className="text-base md:text-lg font-semibold text-gov-gold mb-3 md:mb-4">Vision Statement</h3>
+                    <h3 className="text-base md:text-xl font-semibold text-gov-gold mb-3 md:mb-4">Vision Statement</h3>
                     <blockquote className="text-xl sm:text-2xl md:text-3xl text-white font-light italic">
                         "Every citizen engagement—prepared, personalised, and purposeful."
                     </blockquote>

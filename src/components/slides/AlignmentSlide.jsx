@@ -32,7 +32,7 @@ export default function AlignmentSlide() {
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:px-8 md:py-16">
             <div className="max-w-7xl w-full">
                 {/* Section label */}
-                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-sm font-medium mb-4 md:mb-6 animate-fade-in">
+                <div className="inline-block px-3 py-1 md:px-4 md:py-2 rounded-full bg-gov-sky/20 text-gov-sky text-xs md:text-lg font-medium mb-4 md:mb-6 animate-fade-in">
                     National Priority Alignment
                 </div>
 
@@ -53,13 +53,13 @@ export default function AlignmentSlide() {
                                     <div className={`w-10 h-10 md:w-14 md:h-14 rounded-xl bg-${item.color}/20 flex items-center justify-center`}>
                                         <span className="text-xl md:text-3xl">{item.icon}</span>
                                     </div>
-                                    <h3 className="text-base md:text-xl font-semibold text-white">{item.title}</h3>
+                                    <h3 className="text-base md:text-2xl font-semibold text-white">{item.title}</h3>
                                 </div>
                                 <ul className="space-y-2 md:space-y-3 ml-1 md:ml-2">
                                     {item.items.map((point, i) => (
-                                        <li key={i} className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-sm leading-relaxed">
+                                        <li key={i} className="flex items-start gap-2 md:gap-3 text-white/80 text-[11px] md:text-lg leading-relaxed">
                                             <span className="text-green-400 mt-0.5 flex-shrink-0">✓</span>
-                                            <span className="flex-1">{point}</span>
+                                            <span className="flex-1 md:text-xl">{point}</span>
                                         </li>
                                     ))}
                                 </ul>
