@@ -71,27 +71,26 @@ export default function DemoSlide() {
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
                     <div className="max-w-2xl">
                         <h2 className="text-3xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">
-                            Interface <span className="text-gov-sky">Showcase</span>
+                            Working Prototype <span className="text-gov-sky">Interface Showcase</span>
                         </h2>
                         <p className="text-lg md:text-xl text-white/60 animate-fade-in-up stagger-1">
                             A glimpse into the digital transformation for citizens and officers.
                         </p>
-                    </div>
-
-                    {/* Tabs */}
-                    <div className="flex bg-white/5 p-1.5 rounded-2xl backdrop-blur-sm animate-fade-in-up stagger-2">
-                        {demos.map((demo) => (
-                            <button
-                                key={demo.id}
-                                onClick={() => setActiveTab(demo.id)}
-                                className={`px-4 py-2 md:px-6 md:py-3 rounded-xl transition-all duration-300 text-sm md:text-base font-semibold ${activeTab === demo.id
-                                    ? 'bg-gov-sky text-slate-900 shadow-lg shadow-gov-sky/20'
-                                    : 'text-white/60 hover:text-white hover:bg-white/5'
-                                    }`}
-                            >
-                                {demo.title}
-                            </button>
-                        ))}
+                        {/* Tabs */}
+                        <div className="grid grid-cols-2 gap-2 mt-2 bg-white/5 p-1.5 rounded-2xl backdrop-blur-sm animate-fade-in-up stagger-2 border-[#FFF] border-2">
+                            {demos.map((demo) => (
+                                <button
+                                    key={demo.id}
+                                    onClick={() => setActiveTab(demo.id)}
+                                    className={`px-4 py-2 md:px-6 md:py-3 rounded-xl transition-all duration-300 text-sm md:text-base font-semibold ${activeTab === demo.id
+                                        ? 'bg-gov-sky text-slate-900 shadow-lg shadow-gov-sky/20'
+                                        : 'text-white/60 hover:text-white hover:bg-white/5'
+                                        }`}
+                                >
+                                    {demo.title}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
