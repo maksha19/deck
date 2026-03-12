@@ -54,7 +54,7 @@ export default function PilotSlide() {
                         <div className="space-y-3 md:space-y-4">
                             <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-lg">
                                 <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>
-                                <span>Pilot Steering Committee</span>
+                                <span>Steering Committee oversight</span>
                             </div>
                             <div className="flex items-start gap-2 md:gap-3 text-white/80 text-xs md:text-lg">
                                 <span className="text-gov-sky mt-0.5 flex-shrink-0">•</span>

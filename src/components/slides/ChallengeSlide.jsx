@@ -3,7 +3,7 @@ export default function ChallengeSlide() {
         { label: 'Citizen arrives', icon: '🚶' },
         { label: 'Waits 20mins-40mins', icon: '⏰' },
         { label: '5–10mins session', icon: '💬' },
-        { label: 'Officer docs', icon: '📝' },
+        { label: 'Officer documenting', icon: '📝' },
         { label: '10-15mins waiting', icon: '⏰' },
         { label: 'Minister Meetup', icon: '👥' },
     ]
@@ -11,7 +11,7 @@ export default function ChallengeSlide() {
     const citizenChallenges = [
         { challenge: 'Long waiting times', impact: 'Inconvenience for seniors & families', icon: '⏰' },
         { challenge: 'Limited time to explain', impact: 'Complex cases may be overlooked', icon: '⏳' },
-        { challenge: 'Anxiety & uncertainty', impact: 'Stressful experience for vulnerable groups', icon: '😰' },
+        { challenge: 'Anxiety & uncertainty', impact: 'Stressful experience for first-time groups', icon: '😰' },
         { challenge: 'One chance to explain', impact: 'Difficult for non-native speakers', icon: '🗣️' },
     ]
 

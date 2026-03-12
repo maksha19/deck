@@ -3,7 +3,7 @@ export default function CurrentStateSlide() {
         { label: 'Citizen arrives', icon: '🚶' },
         { label: 'Waits 20-40mins', icon: '⏰' },
         { label: '5–10mins session', icon: '💬' },
-        { label: 'Officer docs', icon: '📝' },
+        { label: 'Officer documenting', icon: '📝' },
         { label: '10-15mins waiting', icon: '⏰' },
         { label: 'Minister Meetup', icon: '👥' },
     ]

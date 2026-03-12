@@ -30,7 +30,7 @@ export default function OpportunitySlide() {
                                 </div>
                                 <div className="flex-1 min-w-0">
                                     <h3 className="text-base md:text-xl font-semibold text-white mb-1">Cornerstone</h3>
-                                    <p className="text-white/70 text-xs md:text-lg leading-relaxed">MPS is a cornerstone of Singapore's participatory governance</p>
+                                    <p className="text-white/70 text-xs md:text-lg leading-relaxed">Meet-the-People Sessions(MPS) is a cornerstone of Singapore's participatory governance</p>
                                 </div>
                             </div>
 

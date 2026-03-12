@@ -1,8 +1,7 @@
 export default function AskSlide() {
     const asks = [
         { number: 1, title: 'Endorsement', purpose: '6-month pilot at designated site' },
-        { number: 2, title: 'Sponsorship', purpose: 'Lead agency to champion pilot' },
-        { number: 3, title: 'Funding', purpose: 'Modest operational funding' },
+        { number: 2, title: 'Sponsorship/Funding', purpose: 'Modest operational funding' },
     ]
 
     const nextSteps = [
@@ -31,7 +30,7 @@ export default function AskSlide() {
                     <h3 className="text-lg md:text-xl font-semibold text-white mb-4 md:mb-6 animate-fade-in-up stagger-1">
                         Approvals Requested
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         {asks.map((ask, index) => (
                             <div
                                 key={index}

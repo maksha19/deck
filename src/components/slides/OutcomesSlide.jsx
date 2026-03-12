@@ -2,7 +2,7 @@ export default function OutcomesSlide() {
     const citizenKPIs = [
         { kpi: 'Reduction in on-site waiting', target: '20–30%' },
         { kpi: 'Citizen satisfaction score index', target: '15–20% ↑' },
-        { kpi: 'Accessibility (seniors/vulnerable)', target: 'High' },
+        { kpi: 'Accessibility (seniors)', target: 'High' },
     ]
 
     const operationalKPIs = [

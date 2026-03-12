@@ -2,8 +2,8 @@ export default function FutureStateSlide() {
     const steps = [
         { label: 'Submit info online', icon: '📱' },
         { label: 'System brief', icon: '🤖' },
-        { label: 'Adv. Review', icon: '📋' },
-        { label: 'Prepared Arrival', icon: '✅' },
+        { label: 'Advance review', icon: '📋' },
+        { label: 'Prepared arrival', icon: '✅' },
         { label: 'Focused discussion', icon: '💬' },
         { label: 'Target resolution', icon: '🎯' },
     ]

@@ -1,6 +1,6 @@
 export default function FeaturesSlide() {
     const features = [
-        { feature: 'Multi-Modal Submission', benefit: 'Citizens choose: video, audio, text, or documents', icon: '📤' },
+        { feature: 'Multi-modal Submission', benefit: 'Citizens choose: video, audio, text, or documents', icon: '📤' },
         { feature: 'AI-Assisted Summaries', benefit: 'Structured briefs for officer preparation', icon: '🤖' },
         { feature: 'Secure Government Cloud', benefit: 'Data protected, PDPA compliant', icon: '☁️' },
         { feature: 'Accessible Design', benefit: 'Supports seniors, inclusive, mobile-friendly', icon: '♿' },
@@ -10,7 +10,7 @@ export default function FeaturesSlide() {
     const principles = [
         { icon: '🤝', title: 'Human-centred', text: 'Officers retain full decision-making authority' },
         { icon: '🔒', title: 'Secure', text: 'Government infrastructure, strict access controls' },
-        { icon: '♿', title: 'Inclusive', text: 'Designed for all citizens and vulnerable groups' },
+        { icon: '♿', title: 'Inclusive', text: 'Designed for all citizens' },
     ]
 
     return (
